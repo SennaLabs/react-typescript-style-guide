@@ -12,43 +12,46 @@ import { AboutPage } from "./pages/AboutPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "",
-      element: (
-        <AppLayout>
-          <Outlet />
-        </AppLayout>
-      ),
-      children: [
-        { index: true, element: <HomePage /> },
-        {
-          path: "docs",
-          element: (
-            <DocumentLayout>
-              <Outlet />
-            </DocumentLayout>
-          ),
-          children: [
-            { index: true, element: <Navigate to="/docs/type-inference" /> },
-            { path: ":slug", element: <DocumentPage /> },
-          ],
-        },
-        {
-          path: "about",
-          element: <AboutPage />,
-        },
-        {
-          path: "404",
-          element: <NotFoundPage />,
-        },
-      ],
-    },
-    {
-      path: "*",
-      element: <Navigate to="404" />,
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        path: "",
+        element: (
+          <AppLayout>
+            <Outlet />
+          </AppLayout>
+        ),
+        children: [
+          { index: true, element: <HomePage /> },
+          {
+            path: "docs",
+            element: (
+              <DocumentLayout>
+                <Outlet />
+              </DocumentLayout>
+            ),
+            children: [
+              { index: true, element: <Navigate to="/docs/type-inference" /> },
+              { path: ":slug", element: <DocumentPage /> },
+            ],
+          },
+          {
+            path: "about",
+            element: <AboutPage />,
+          },
+          {
+            path: "404",
+            element: <NotFoundPage />,
+          },
+        ],
+      },
+      {
+        path: "*",
+        element: <Navigate to="404" />,
+      },
+    ],
+    { basename: "/react-typescript-style-guild/" }
+  );
   return <RouterProvider router={router} />;
 }
 
