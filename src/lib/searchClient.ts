@@ -3,10 +3,10 @@ import algoliasearch from "algoliasearch/lite";
 
 export const indexName = "react-typescript-style-guild";
 
-const algoliaClient = algoliasearch(
-  "5FAZAW5WXJ",
-  "33c3cbb33509a3db3c5db8de021379de"
-);
+const appId = import.meta.env.VITE_ALGOLIA_APP_ID;
+const apiKey = import.meta.env.VITE_ALGOLIA_API_KEY;
+
+const algoliaClient = algoliasearch(appId, apiKey);
 
 export const searchClient = {
   ...algoliaClient,
