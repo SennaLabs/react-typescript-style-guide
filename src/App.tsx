@@ -50,7 +50,7 @@ function App() {
         element: <Navigate to="404" />,
       },
     ],
-    { basename: "/react-typescript-style-guild/" }
+    { basename: "/react-typescript-style-guild" }
   );
   return <RouterProvider router={router} />;
 }
