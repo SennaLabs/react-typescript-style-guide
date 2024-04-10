@@ -1,3 +1,5 @@
+import { getImagePath } from "@/lib/utils";
+
 export function AboutPage() {
   return (
     <div className="mx-auto max-w-[1536px] min-h-[calc(100dvh-80px-104px)] p-[56px] mobile:p-[60px_40px]">
@@ -79,7 +81,7 @@ export function AboutPage() {
           <div className="border border-secondary p-[16px] bg-gray  rounded-[8px]">
             <img
               className="w-[80px] aspect-auto mx-auto"
-              src="/images/tech-life-cat.png"
+              src={getImagePath("/images/tech-life-cat.png")}
               alt="Tech life cat"
             />
           </div>

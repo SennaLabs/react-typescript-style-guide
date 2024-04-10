@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import { getImagePath } from "@/lib/utils";
 import { useNavigate } from "react-router-dom";
 
 export function HomePage() {
@@ -8,7 +9,7 @@ export function HomePage() {
       <div className="flex justify-center gap-[100px] mobile:flex-col mobile:gap-[50px] tablet:gap-[16px]">
         <img
           className="w-[500px] aspect-auto tablet:w-[60%]"
-          src="/images/tech-life-virtual-reality.png"
+          src={getImagePath("/images/tech-life-virtual-reality.png")}
           alt="Tech life virtual reality"
         />
         <div className="mobile:order-first">

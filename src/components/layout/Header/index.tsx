@@ -10,6 +10,7 @@ import {
 import { Sidebar } from "../Sidebar";
 import { useEffect, useState } from "react";
 import { MenuIcon } from "lucide-react";
+import { getImagePath } from "@/lib/utils";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export function Header() {
               <Link to="/" className="flex items-center gap-x-[4px]">
                 <img
                   className="w-[40px] h-[40px]"
-                  src="/images/tech-life-cat.png"
+                  src={getImagePath("/images/tech-life-cat.png")}
                   alt="Tech life cat"
                 />
                 <span className="text-[20px] font-semibold">CatKod</span>
@@ -43,7 +44,7 @@ export function Header() {
         <Link to="/" className="flex items-center gap-x-[4px]">
           <img
             className="w-[40px] h-[40px]"
-            src="/images/tech-life-cat.png"
+            src={getImagePath("/images/tech-life-cat.png")}
             alt="Tech life cat"
           />
           <span className="text-[20px] font-semibold">CatKod</span>
