@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# React TypeScript Style Guide
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a collection of coding conventions and best practices for writing React applications with TypeScript. Our goal is to help developers write clean, consistent, and maintainable code.
 
-Currently, two official plugins are available:
+## Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Check out the style guide on our website: [https://sennalabs.github.io/react-typescript-style-guild](https://sennalabs.github.io/react-typescript-style-guild)
 
-## Expanding the ESLint configuration
+## What's Inside?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+We cover a range of topics related to React and TypeScript development, including:
 
-- Configure the top-level `parserOptions` property like this:
+- Effective use of TypeScript types
+- Function and variable best practices
+- Naming conventions
+- Project structure and organization
+- React-specific guides (state management, component design, etc.)
+- Testing
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Running Locally
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Want to run the Style Guide locally? Follow these simple steps:
+
+1. Clone this repo
+2. Run `yarn install`
+3. Run `yarn start`
+4. Open `http://localhost:3000` in your browser
+
+## Contributions Welcome!
+
+This Style Guide can always be updated and adapted to stay current and meet the real-world needs of our team. If you have any suggestions, corrections, or new ideas, we would be more than happy to discuss them with you!
+
+---
+
+Made with ❤️ by the SennaLabs team.
