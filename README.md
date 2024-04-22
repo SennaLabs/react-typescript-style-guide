@@ -4,7 +4,7 @@ This project is a collection of coding conventions and best practices for writin
 
 ## Website
 
-Check out the style guide on our website: [https://sennalabs.github.io/react-typescript-style-guild](https://sennalabs.github.io/react-typescript-style-guild)
+Check out the style guide on our website: [https://sennalabs.github.io/react-typescript-style-guide](https://sennalabs.github.io/react-typescript-style-guide)
 
 ## What's Inside?
 

@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://SennaLabs.github.io/react-typescript-style-guild/",
+  "homepage": "https://SennaLabs.github.io/react-typescript-style-guide/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

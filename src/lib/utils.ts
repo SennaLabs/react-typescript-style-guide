@@ -6,5 +6,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function getImagePath(src: string) {
-  return `/react-typescript-style-guild${src}`;
+  return `/react-typescript-style-guide${src}`;
 }

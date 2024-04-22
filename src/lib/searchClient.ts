@@ -1,7 +1,7 @@
 import { SearchClient } from "algoliasearch";
 import algoliasearch from "algoliasearch/lite";
 
-export const indexName = "react-typescript-style-guild";
+export const indexName = "react-typescript-style-guide";
 
 const appId = import.meta.env.VITE_ALGOLIA_APP_ID;
 const apiKey = import.meta.env.VITE_ALGOLIA_API_KEY;
